@@ -1,16 +1,78 @@
-# React + Vite
+## 🚀 awsproject-nathan: A Collection of React Games
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19.1.1-blue?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-7.1.7-yellow?style=for-the-badge&logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.15-06B6D4?style=for-the-badge&logo=tailwindcss)
+---
+## 📝 Project Description
 
-Currently, two official plugins are available:
+This project is a simple web application that serves as a **game hub**, developed to demonstrate the use of **React** in conjunction with **Vite** and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### What does the project do?
 
-## React Compiler
+The application features a start screen that allows the user to choose between two game modes:
+1.  **Guessing Game (JogoAdivinhacao.jsx):** A classic game of guessing a number between 1 and 100.
+2.  **RPG Game (JogoRPG.jsx):** A mini turn-based battle game where the player faces level-scaling enemies and can Attack, Heal, or use a Special Ability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Built with
 
-## Expanding the ESLint configuration
+* **Frontend:** React
+* **Build Tool/Bundler:** Vite
+* **Styling:** Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Why was it built?
+
+(Suggestion) The project was created as a practical exercise or challenge to consolidate knowledge in React, state management (`useState`), and the application of modern styling with Tailwind CSS to build an interactive and responsive interface.
+---
+## ⚙️ Installation Instructions
+
+Follow the steps below to clone the repository and run the project on your local machine.
+
+### Prerequisites
+
+Make sure you have **Node.js** (LTS version recommended) and the **npm** package manager installed.
+
+### Installation Steps
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [YOUR_REPOSITORY_URL]
+    cd awsproject-nathan
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or yarn install / pnpm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will start at `http://localhost:5173` (or a similar port).
+
+4.  **(Optional) For production build:**
+    ```bash
+    npm run build
+    ```
+    The build will be generated in the `dist` folder.
+---
+## 🎮 Usage Instructions
+
+Upon starting the application:
+
+1.  **Choose the Game:** On the **Start Screen**, click the **"Guessing Game"** or **"RPG Game"** button to select the mode.
+2.  **In the Guessing Game:** Enter a number in the text field and click **"Send Attempt"** to receive hints on whether to try a higher or lower number, aiming to guess the secret number between 1 and 100.
+3.  **In the RPG Game:** The battle is turn-based.
+    * **Attack:** Deals damage to the enemy.
+    * **Heal:** Restores a portion of the player's HP.
+    * **Special Ability:** Deals double damage (available once per battle).
+    * Upon winning, click **"Next Battle"** to level up and face a stronger enemy.
+4.  **Go Back:** Use the **"Return to Start Screen"** button present in both games to go back to the main menu.
+---
+## 📜 License
+
+This project is licensed under the **MIT** license.
+
+*(Note: Create a `LICENSE` file in your project's root directory with the full license text.)*
