@@ -75,5 +75,3 @@ Upon starting the application:
 ## 📜 License
 
 This project is licensed under the **MIT** license.
-
-*(Note: Create a `LICENSE` file in your project's root directory with the full license text.)*
