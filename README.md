@@ -22,7 +22,8 @@ The application features a start screen that allows the user to choose between t
 
 ### Why was it built?
 
-(Suggestion) The project was created as a practical exercise or challenge to consolidate knowledge in React, state management (`useState`), and the application of modern styling with Tailwind CSS to build an interactive and responsive interface.
+The project was created as a practical exercise or challenge to consolidate knowledge in React, state management (`useState`), and the application of modern styling with Tailwind CSS to build an interactive and responsive interface.
+
 ---
 ## ⚙️ Installation Instructions
 
