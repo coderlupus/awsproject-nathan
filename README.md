@@ -59,6 +59,23 @@ Make sure you have **Node.js** (LTS version recommended) and the **npm** package
     ```
     The build will be generated in the `dist` folder.
 ---
+## 🛠 Technical Improvements & Cloud Roadmap
+
+While the current version operates as a client-side Single Page Application (SPA), the roadmap focuses on migrating the architecture to a **Serverless Cloud-Native** model to leverage the full power of AWS:
+
+### 🏗 Cloud Architecture (Serverless)
+* **Backend Logic on AWS Lambda**: Move critical game logic (like RNG - Random Number Generation and damage calculation) from the browser to **AWS Lambda** functions via **API Gateway**. This prevents client-side cheating and ensures fairness.
+* **Data Persistence with DynamoDB**: Integrate **Amazon DynamoDB** to store player progress (RPG Level, High Scores) persistently, replacing the current ephemeral local state.
+* **Authentication**: Implement **Amazon Cognito** to manage user identities, allowing players to save their sessions and access their data from any device.
+
+### ⚙️ DevOps & CI/CD
+* **Infrastructure as Code (IaC)**: Define the cloud infrastructure using **Terraform** or **AWS CDK** to automate the provisioning of S3 buckets and CloudFront distributions.
+* **Automated Pipeline**: Set up **GitHub Actions** or **AWS CodePipeline** to automatically build and deploy the React app to S3 whenever a commit is pushed to the `main` branch.
+
+### 🧪 Observability
+* **Monitoring**: Integrate **AWS CloudWatch** to track Lambda execution errors and **AWS X-Ray** to trace latency in API calls.
+---
+
 ## 🎮 Usage Instructions
 
 Upon starting the application:
