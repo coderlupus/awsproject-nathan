@@ -59,21 +59,38 @@ Make sure you have **Node.js** (LTS version recommended) and the **npm** package
     ```
     The build will be generated in the `dist` folder.
 ---
-## 🛠 Technical Improvements & Cloud Roadmap
+## 🛠 Technical Improvements & Learning Notes (AWS)
 
-While the current version operates as a client-side Single Page Application (SPA), the roadmap focuses on migrating the architecture to a **Serverless Cloud-Native** model to leverage the full power of AWS:
+This project was intentionally kept **simple and fully client-side**, as its main goal was to **introduce basic AWS concepts**, not to implement a real cloud architecture.
 
-### 🏗 Cloud Architecture (Serverless)
-* **Backend Logic on AWS Lambda**: Move critical game logic (like RNG - Random Number Generation and damage calculation) from the browser to **AWS Lambda** functions via **API Gateway**. This prevents client-side cheating and ensures fairness.
-* **Data Persistence with DynamoDB**: Integrate **Amazon DynamoDB** to store player progress (RPG Level, High Scores) persistently, replacing the current ephemeral local state.
-* **Authentication**: Implement **Amazon Cognito** to manage user identities, allowing players to save their sessions and access their data from any device.
+The points below represent **conceptual improvements and learning directions**, not planned features.
 
-### ⚙️ DevOps & CI/CD
-* **Infrastructure as Code (IaC)**: Define the cloud infrastructure using **Terraform** or **AWS CDK** to automate the provisioning of S3 buckets and CloudFront distributions.
-* **Automated Pipeline**: Set up **GitHub Actions** or **AWS CodePipeline** to automatically build and deploy the React app to S3 whenever a commit is pushed to the `main` branch.
+### ☁️ AWS Concepts Explored (Conceptual)
 
-### 🧪 Observability
-* **Monitoring**: Integrate **AWS CloudWatch** to track Lambda execution errors and **AWS X-Ray** to trace latency in API calls.
+**Serverless Awareness**  
+Understanding where services like **AWS Lambda** and **API Gateway** could be used in a real application (e.g. RNG or battle logic), even though all logic remains on the client.
+
+**Data Persistence (Conceptual)**  
+Studying **Amazon DynamoDB** as a way to persist player progress or scores, without implementing it to keep the project lightweight.
+
+**Authentication (Out of Scope)**  
+**Amazon Cognito** was analyzed conceptually but considered unnecessary for the scope of this project.
+
+### 🚫 Why These Improvements Were Not Implemented
+
+- The objective was **learning**, not production readiness  
+- Limited development time  
+- No real need for scalability, persistence, or security  
+- Simplicity and readability were prioritized  
+
+### ✅ Final Scope
+
+This project serves as:
+
+- A **React + Vite + Tailwind CSS** practice project  
+- A **conceptual introduction to AWS and cloud architecture**  
+- A foundation for future, more complex cloud-based projects  
+
 ---
 
 ## 🎮 Usage Instructions
